@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POMNSoE | Gallery</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/mwlayout.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+<div id="breadcrumbs"></div>
+
+<main class="gallery-container page-container">
+
+    
+    <section class="gal-section reveal">
+        <h1 class="reveal">Gallery</h1>
+        <p>
+            A visual record of school life, capturing moments of learning,
+            growth, and community.
+        </p>
+    </section>
+
+    
+    <section class="gal-section reveal">
+        <h2 class="reveal">Gallery Categories</h2>
+        <p>
+            Choose a category to explore photo collections from school life, events, facilities, and programs.
+        </p>
+        <div class="album-grid" id="albumGrid"></div>
+    </section>
+
+</main>
+
+
+<div class="modal" id="albumModal">
+    <div class="modal-content large">
+        <span class="close-btn" id="closeAlbum">&times;</span>
+        <h2 id="albumTitle"></h2>
+        <div class="album-grid" id="subAlbumGrid"></div>
+    </div>
+</div>
+
+
+<div class="modal" id="subAlbumModal">
+    <div class="modal-content large">
+        <span class="close-btn" id="closeSubAlbum">&times;</span>
+        <h2 id="subAlbumTitle"></h2>
+        <div class="photo-grid" id="photoGrid"></div>
+    </div>
+</div>
+
+
+<div class="modal" id="photoModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closePhoto">&times;</span>
+        <img id="photoImg" alt="">
+        <h2 id="photoTitle"></h2>
+        <p id="photoDesc"></p>
+    </div>
+</div>
+
+<section class="cta-banner">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+        <h2>Do you want to know more?</h2>
+        <p>Contact us to learn more or apply.</p>
+        <div class="cta-buttons">
+            <a href="/main pages/admissions.html" class="cta-btn primary">
+                Start Your Application
+            </a>
+        </div>
+        <div class="cta-contact">
+            <a href="tel:+6753262855" class="contact-item">
+                ðŸ“ž +675 326 2855
+            </a>
+            <a href="mailto:pomnsoe2023@gmail.com" class="contact-item">
+                âœ‰ï¸ pomnsoe2023@gmail.com
+            </a>
+            <a href="https://maps.app.goo.gl/dTYYtvLCz7WHcbBx9"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-item">
+                ðŸ“ Goro - Kaeaga Rd, Port Moresby, Papua New Guinea
+            </a>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/gallery.js"></script>
+</body>
+</html>
+

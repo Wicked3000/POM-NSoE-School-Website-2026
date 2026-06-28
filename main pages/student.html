@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POMNSoE | Student Life</title>
+  <meta name="description" content="Explore student life at Port Moresby National School of Excellence. Learn about academics, sports, community, and what it means to be a POMNSoE student.">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/swlayout.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+<div id="breadcrumbs"></div>
+
+<main class="stu-container page-container">
+
+    
+    <section class="stu-section reveal">
+        <h1 class="reveal">Student Life</h1>
+        <p>
+            Being a student at POMNSoE is more than attending classes; it is
+            stepping into a structured, disciplined, and purpose-driven environment
+            where growth is expected and excellence is pursued daily.
+        </p>
+    </section>
+
+    
+    <section class="stu-section story reveal">
+        <h2 class="reveal">What It Means to Be a Student</h2>
+        <p>
+            Every day begins with expectation. Students are challenged, not only
+            academically, but mentally and socially. There is a rhythm: lessons,
+            discussions, activities, and reflection. It is demanding, but it builds
+            resilience, independence, and focus.
+        </p>
+    </section>
+
+    
+    <section class="stu-section story with-image reveal">
+        <img src="/images/Gallery/Students Projects.webp" alt="STEM Student Life" class="reveal-left">
+        <div class="reveal-right">
+            <h2 class="reveal">Life as a STEM Student</h2>
+            <p>
+                STEM students operate in a fast-paced, analytical environment.
+                Experiments, calculations, and technical work dominate their
+                routine. The workload is heavy, but so is the reward. Precision,
+                problem-solving, and innovation define their journey.
+            </p>
+        </div>
+    </section>
+
+    
+    <section class="stu-section story with-image">
+        <img src="/images/Facilities/Bio Lab 1.jpeg" alt="Science Student Life">
+        <div>
+            <h2>Life as a Science Student</h2>
+            <p>
+                Science students balance theory with application. Whether studying
+                biology, chemistry, or physics combinations, they engage deeply
+                with concepts that explain the natural world. Their days demand
+                curiosity and discipline.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="stu-section story with-image">
+        <img src="/images/Gallery/Students.webp" alt="Humanities Student Life">
+        <div>
+            <h2>Life as a Humanities Student</h2>
+            <p>
+                Humanities students explore society, history, and human behavior.
+                Their strength lies in analysis, discussion, and perspective.
+                They develop communication, critical thinking, and awareness of
+                the world beyond numbers and formulas.
+            </p>
+        </div>
+    </section>
+
+    
+
+
+    
+    <section class="stu-section">
+        <h2>Daily Student Experience</h2>
+        <p>Tap any card to see photos and learn more about each area of student life.</p>
+
+        <div class="life-grid">
+
+            <div class="life-card" data-activity="Sports">
+                <div class="life-card-icon"><i class="fa-solid fa-futbol"></i></div>
+                <h3>Sports</h3>
+                <p>
+                    Physical activity is part of the routine. Students engage in
+                    basketball, volleyball, netball, and field sports, building
+                    teamwork, discipline, and endurance.
+                </p>
+                <span class="life-card-cta">View Photos <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="life-card" data-activity="Library">
+                <div class="life-card-icon"><i class="fa-solid fa-book-open"></i></div>
+                <h3>Library</h3>
+                <p>
+                    A quiet space for focus and research. The library supports
+                    academic growth, offering resources and an environment for
+                    serious study.
+                </p>
+                <span class="life-card-cta">View Photos <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="life-card" data-activity="Tech Labs &amp; WiFi">
+                <div class="life-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Tech Labs &amp; WiFi</h3>
+                <p>
+                    Access to technology enhances learning. Students use tech labs
+                    and internet resources to research, create, and collaborate.
+                </p>
+                <span class="life-card-cta">View Photos <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="life-card" data-activity="Classroom Life">
+                <div class="life-card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Classroom Life</h3>
+                <p>
+                    Lessons are interactive. Students engage in discussions,
+                    presentations, and collaborative work that push them beyond
+                    passive learning.
+                </p>
+                <span class="life-card-cta">View Photos <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="life-card" data-activity="Community &amp; Faith">
+                <div class="life-card-icon"><i class="fa-solid fa-hands-praying"></i></div>
+                <h3>Community &amp; Faith</h3>
+                <p>
+                    Services, RE sessions, and student groups shape values and
+                    character, building a sense of belonging and purpose.
+                </p>
+                <span class="life-card-cta">View Photos <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+            <div class="life-card" data-activity="Discipline &amp; Structure">
+                <div class="life-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Discipline &amp; Structure</h3>
+                <p>
+                    The system is firm. Expectations are clear. Students grow
+                    through consistency, accountability, and responsibility.
+                </p>
+                <span class="life-card-cta">View Photos <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<div class="modal" id="activityModal">
+    <div class="modal-content large">
+        <span class="close-btn" id="closeActivity">&times;</span>
+        <h2 id="activityTitle"></h2>
+        <div class="activity-photos">
+            <div class="photo-item">
+                <img id="photo1" src="" alt="">
+                <p id="caption1"></p>
+            </div>
+            <div class="photo-item">
+                <img id="photo2" src="" alt="">
+                <p id="caption2"></p>
+            </div>
+            <div class="photo-item">
+                <img id="photo3" src="" alt="">
+                <p id="caption3"></p>
+            </div>
+        </div>
+        <p id="activityDesc"></p>
+    </div>
+</div>
+
+<section class="cta-banner">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+        <h2>Do you want to know more?</h2>
+        <p>Contact us to learn more or apply.</p>
+        <div class="cta-buttons">
+            <a href="/main pages/admissions.html" class="cta-btn primary">
+                Start Your Application
+            </a>
+        </div>
+        <div class="cta-contact">
+            <a href="tel:+6753262855" class="contact-item">
+                ðŸ“ž +675 326 2855
+            </a>
+            <a href="mailto:pomnsoe2023@gmail.com" class="contact-item">
+                âœ‰ï¸ pomnsoe2023@gmail.com
+            </a>
+            <a href="https://maps.app.goo.gl/dTYYtvLCz7WHcbBx9"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-item">
+                ðŸ“ Goro - Kaeaga Rd, Port Moresby, Papua New Guinea
+            </a>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/student.js"></script>
+</body>
+</html>
+

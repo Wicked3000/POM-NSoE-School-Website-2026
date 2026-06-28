@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POMNSoE | Staff</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/swlayout.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+<div id="breadcrumbs"></div>
+
+<main class="staff-container page-container">
+
+    
+    <section class="staff-section">
+        <h1>Our Staff</h1>
+        <p>
+            Our staff form the foundation of the institution: leaders, educators,
+            and support personnel working together to maintain excellence,
+            discipline, and growth.
+        </p>
+    </section>
+
+    
+    <section class="staff-section">
+        <h2>Principals</h2>
+        <div class="staff-grid" id="principalsGrid"></div>
+    </section>
+
+    
+    <section class="staff-section">
+        <h2>Explore Staff</h2>
+
+        <div class="filter-buttons">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="academic">Academic</button>
+            <button data-filter="admin">Administration</button>
+            <button data-filter="ancillary">Ancillary</button>
+        </div>
+
+        <div class="staff-grid" id="staffGrid"></div>
+    </section>
+
+</main>
+
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <img id="modalImg">
+        <h2 id="modalName"></h2>
+        <p id="modalRole"></p>
+        <p id="modalDept"></p>
+        <p id="modalEmail"></p>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/staff.js"></script>
+</body>
+</html>

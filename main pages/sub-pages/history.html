@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POMNSoE | History</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/swlayout.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+<div id="breadcrumbs"></div>
+
+<main class="history-container page-container">
+
+    
+    <section class="history-section">
+        <h1>Our History</h1>
+        <p>
+            From 1995 to today, each year has shaped the identity of this institution.
+            Growth was never accidental; it was built.
+        </p>
+    </section>
+
+    
+    <section class="history-section">
+        <h2>Timeline</h2>
+
+        <div class="timeline-controls">
+            <button data-range="all" class="active">All</button>
+            <button data-range="1995-2005">1995 to 2005</button>
+            <button data-range="2006-2015">2006 to 2015</button>
+            <button data-range="2016-2025">2016 to Present</button>
+        </div>
+
+        <div class="timeline-wrapper">
+            <div class="timeline" id="timeline"></div>
+        </div>
+    </section>
+
+    
+    <section class="history-section">
+        <h2>Significant Events</h2>
+        <div class="events-grid" id="events"></div>
+    </section>
+
+    
+    <section class="history-section">
+        <h2>History of Principals</h2>
+        <ul class="principals-list">
+            <li class="principal-item">
+                <img src="/images/ID Photo placeholder.webp" alt="1995-1996 Principal" class="principal-image">
+                <div class="principal-content">
+                    <span class="principal-year">1995 - 1996</span>
+                    <h3>Founding Principal</h3>
+                    <p>The first principal established the school’s direction and built the foundation for future excellence.</p>
+                </div>
+            </li>
+            <li class="principal-item">
+                <img src="/images/ID Photo placeholder.webp" alt="1997-1998 Principal" class="principal-image">
+                <div class="principal-content">
+                    <span class="principal-year">1997 - 1998</span>
+                    <h3>Early Growth Principal</h3>
+                    <p>Led the school through an early expansion phase and strengthened academic programmes.</p>
+                </div>
+            </li>
+            <li class="principal-item">
+                <img src="/images/ID Photo placeholder.webp" alt="1999-2023 Principal" class="principal-image">
+                <div class="principal-content">
+                    <span class="principal-year">1999 - 2023</span>
+                    <h3>Long-Term Leadership</h3>
+                    <p>Oversaw a long period of stability, development, and academic achievement across the school.</p>
+                </div>
+            </li>
+            <li class="principal-item">
+                <img src="/images/ID Photo placeholder.webp" alt="2023-2024 Principal" class="principal-image">
+                <div class="principal-content">
+                    <span class="principal-year">2023 - 2024</span>
+                    <h3>Transition Principal</h3>
+                    <p>Maintained strong leadership during a key transitional period and kept the school on course.</p>
+                </div>
+            </li>
+            <li class="principal-item">
+                <img src="/images/ID Photo placeholder.webp" alt="2025-Present Principal" class="principal-image">
+                <div class="principal-content">
+                    <span class="principal-year">2025 - Present</span>
+                    <h3>Current Principal</h3>
+                    <p>Leading the school today with a renewed focus on innovation, discipline, and student success.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    
+    <section class="history-section">
+        <h1 class="chart-label">Student Population Growth (1995 to Present)</h1>
+        <canvas id="statsChart" width="1000" height="520" style="max-width: 100%; height: auto;"></canvas>
+    </section>
+
+</main>
+
+
+<div id="footer"></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/nav.js"></script>
+<script src="../../js/history.js"></script>
+</body>
+</html>

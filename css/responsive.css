@@ -1,0 +1,625 @@
+/* Responsive Media Queries */
+
+@media (max-width: 1280px) {
+    /* Base typography adjustments */
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Container pads */
+    .container,
+    .about-container,
+    .admissions-container,
+    .history-container,
+    .facilities-container,
+    .staff-container,
+    .acad-container,
+    .gallery-container,
+    .act-container,
+    .stu-container,
+    .src-container {
+        padding: 60px 24px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Header & Top Ribbon */
+    .top-ribbon {
+        padding: 8px 0;
+    }
+
+    .top-ribbon-inner {
+        padding: 0 16px;
+    }
+
+    .logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .logo-divider {
+        height: 32px;
+    }
+
+    .site-name {
+        font-size: 15px;
+        letter-spacing: 0.3px;
+    }
+
+    .school-motto {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .top-right-controls {
+        display: none; /* Handled in mobile menu drawer */
+    }
+
+    /* Navigation & Mobile Toggle */
+    .nav-ribbon {
+        background: var(--dark-purple);
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-container {
+        padding: 0 16px;
+        justify-content: flex-end;
+    }
+
+    /* Mobile menu hamburger toggle */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 32px;
+        height: 22px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1005;
+        opacity: 1;
+        transition: opacity 0s linear 0.4s;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: var(--white);
+        border-radius: 2px;
+        transition: var(--transition-smooth);
+    }
+    .menu-toggle.active {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0s;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+        background-color: var(--primary-gold);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+        background-color: var(--primary-gold);
+    }
+
+    /* Mobile Navigation Drawer Menu */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background: linear-gradient(135deg, var(--dark-purple) 0%, var(--secondary-purple) 100%);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
+        padding: 24px 0 80px 0;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        z-index: 1002;
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    /* Mobile Menu Drawer Header */
+    .nav-mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px 20px 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        margin-bottom: 16px;
+    }
+
+    .mobile-header-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .mobile-header-logo img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+    }
+
+    .mobile-header-name {
+        font-family: var(--font-alt);
+        font-weight: 700;
+        color: var(--white);
+        font-size: 1.15rem;
+    }
+
+    #menu-close-btn {
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.75rem;
+        cursor: pointer;
+        line-height: 1;
+        transition: var(--transition-smooth);
+    }
+
+    #menu-close-btn:hover {
+        color: var(--primary-gold);
+    }
+
+    /* Mobile Navigation Items */
+    .nav-item {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .nav-menu > .nav-item > a {
+        padding: 14px 24px;
+        width: calc(100% - 60px);
+        font-size: 0.95rem;
+    }
+
+    .nav-item a::before {
+        display: none;
+    }
+
+    .nav-item.dropdown > a::after {
+        display: none;
+    }
+
+    /* Submenu dropdown buttons on mobile */
+    .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 48px;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.25rem;
+        cursor: pointer;
+        transition: var(--transition-smooth);
+        margin-right: 10px;
+    }
+
+    .dropdown-toggle:hover {
+        color: var(--primary-gold);
+    }
+
+    /* Mobile Dropdown Lists */
+    .dropdown-menu {
+        position: static;
+        display: none !important;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.15);
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+    }
+
+    .dropdown-menu.active {
+        display: block !important;
+    }
+
+    .dropdown-menu li a {
+        padding: 10px 24px 10px 48px;
+        font-size: 0.9rem;
+    }
+
+    .dropdown-menu li a:hover {
+        padding-left: 54px;
+    }
+
+    /* Mobile menu search */
+    .nav-item.search-mobile {
+        padding: 16px 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .search-mobile .search-container {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        height: 44px;
+        padding: 4px;
+    }
+
+    .search-mobile .search-input {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .search-mobile .search-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Mobile drawer footer contact info */
+    .nav-footer {
+        margin-top: auto;
+        padding: 24px;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .school-contact-heading {
+        font-family: var(--font-alt);
+        color: var(--primary-gold);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+
+    .mobile-footer-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Hero slider on small screens */
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-overlay {
+        padding: 0 40px;
+    }
+
+    .hero-content {
+        max-width: 500px;
+        padding: 32px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.75rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Sections & Grids */
+    .split,
+    .split.reverse {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .history-image,
+    .student-image {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .stat {
+        padding: 32px;
+    }
+
+    /* Pages Layouts */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .map iframe {
+        height: 280px;
+    }
+
+    .curriculum-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .album-grid,
+    .events-grid,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .principal-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+        padding: 24px;
+    }
+
+    .principal-image {
+        margin: 0 auto;
+    }
+
+    .principal-year {
+        align-self: center;
+    }
+
+    .featured {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .featured img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-section .principal-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .about-section .principal-image {
+        width: 100%;
+        max-width: 240px;
+        margin: 0 auto;
+    }
+
+    .chairperson-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .life-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Header details for mob */
+    .site-name {
+        font-size: 13px;
+    }
+
+    .school-motto {
+        font-size: 8px;
+        letter-spacing: 0.5px;
+    }
+
+    .logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo-container {
+        gap: 10px;
+    }
+
+    /* Hero */
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-overlay {
+        padding: 0 20px;
+    }
+
+    .hero-content {
+        padding: 24px;
+        gap: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        padding: 10px 28px;
+        font-size: 0.85rem;
+    }
+
+    .album-grid,
+    .events-grid,
+    .steps-grid,
+    .fac-grid,
+    .staff-grid,
+    .team-grid,
+    .dept-grid,
+    .info-grid,
+    .date-blocks-grid,
+    .subjects-grid.two-columns,
+    .activities-grid,
+    .testimonial-grid,
+    .announcement-grid,
+    .src-grid,
+    .chairperson-pair {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Principal testimonial box */
+    .principal-section {
+        padding: 32px 24px;
+    }
+
+    .principal-text p {
+        font-size: 1.05rem;
+    }
+
+    /* CTA Callout Banner */
+    .cta-banner {
+        padding: 80px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 2.25rem;
+    }
+
+    .cta-content p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .cta-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* Timelines */
+    .timeline-item {
+        min-width: 270px;
+        max-width: 270px;
+        padding: 20px;
+    }
+
+    /* Table Chart formatting */
+    .table-wrapper th,
+    .table-wrapper td {
+        padding: 12px 16px;
+        font-size: 0.85rem;
+    }
+
+    /* Activities picture grid inside popups */
+    .activity-photos {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .activity-photos img {
+        height: 160px;
+    }
+    /* Mobile Calendar adjustments */
+    .calendar-container {
+        padding: 16px;
+    }
+    .calendar-header h3 {
+        font-size: 1.2rem;
+    }
+    .calendar-weekdays {
+        font-size: 0.75rem;
+        gap: 4px;
+        margin-bottom: 12px;
+    }
+    .calendar-grid {
+        gap: 6px;
+    }
+    .day {
+        font-size: 0.85rem;
+    }
+
+    /* Student Engagement Story Cards mobile */
+    .stu-section.story.with-image,
+    .stu-section.story.with-image:nth-of-type(odd) {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 24px;
+    }
+
+    .stu-section.story.with-image img {
+        max-width: 100%;
+        height: 220px;
+    }
+
+    .chairperson-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .life-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Hero Responsive Adjustments added dynamically */
+@media (max-width: 1280px) {
+    .hero-overlay { padding: 0 80px; }
+    .hero-content h1 { font-size: 3rem; }
+}
+
+@media (max-width: 992px) {
+    .hero-overlay { padding: 0 40px; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content p { font-size: 1rem; }
+}
+
+@media (max-width: 768px) {
+    .hero-overlay { padding: 0 20px; justify-content: center; text-align: center; }
+    .hero-content { align-items: center; padding: 30px 20px; }
+    .hero-content h1 { font-size: 2rem; }
+    .hero-content p { font-size: 0.95rem; }
+    .hero-content .cta-buttons { flex-direction: column; gap: 15px; width: 100%; }
+    .hero-content .btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .hero-overlay { padding: 0 15px; }
+    .hero-content { padding: 25px 15px; }
+    .hero-content h1 { font-size: 1.75rem; }
+    .hero { height: 70vh; }
+}

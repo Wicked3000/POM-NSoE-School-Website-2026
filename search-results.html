@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results | POMNSoE</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+<div id="breadcrumbs"></div>
+
+
+<section class="search-results-section">
+    <div class="container">
+        <div class="search-header">
+            <h1>Search Results</h1>
+            <div class="search-summary">
+                <p id="search-query-display">Searching for: <span id="query-text"></span></p>
+                <p id="results-count">Found <span id="result-count">0</span> results</p>
+            </div>
+            <div class="search-filters">
+                <label for="category-filter">Filter by category:</label>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="search-results" class="search-results-list">
+            
+        </div>
+
+        <div id="no-results" class="no-results" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h3>No results found</h3>
+            <p>Try different keywords or check your spelling.</p>
+            <a href="/index.html" class="back-home-btn">Back to Home</a>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="/js/nav.js"></script>
+<script src="js/search-data.js"></script>
+<script src="js/search-results.js"></script>
+</body>
+</html>

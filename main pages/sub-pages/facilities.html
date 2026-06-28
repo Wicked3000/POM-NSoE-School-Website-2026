@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POMNSoE | Facilities</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/swlayout.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+<div id="breadcrumbs"></div>
+
+<main class="facilities-container page-container">
+
+    
+    <section class="fac-section">
+        <h1>Our Facilities</h1>
+        <p>
+            Our campus is built to support learning, innovation, and growth.
+            Each facility serves a purpose: academic excellence, physical development,
+            and community engagement.
+        </p>
+    </section>
+
+    
+    <section class="fac-section featured">
+        <img src="../../images/Facilities/Clock Tower.jpeg" alt="Clocktower">
+        <div>
+            <h2>Campus Landmark</h2>
+            <p>
+                The clocktower stands at the heart of the school, symbolizing structure,
+                discipline, and the passage of time, guiding every student forward.
+            </p>
+        </div>
+    </section>
+
+    
+    <section class="fac-section">
+        <h2>Explore Facilities</h2>
+
+        <div class="filter-buttons">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="academic">Academic</button>
+            <button data-filter="sports">Sports</button>
+            <button data-filter="general">General</button>
+        </div>
+
+        <div class="fac-grid" id="facGrid"></div>
+    </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../../js/main.js"></script>
+<script src="../../js/nav.js"></script>
+<script src="../../js/facilities.js"></script>
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <img id="modalImg" src="">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+    </div>
+</div>
+</body>
+</html>
